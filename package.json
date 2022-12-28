@@ -1,17 +1,14 @@
 {
-  "name": "indi-mern-app",
+  "name": "indi-edc-server-app",
   "version": "1.0.0",
   "description": "",
-  "main": "./server/server.js",
+  "main": "server.js",
   "scripts": {
-    "setup": "npm install && cd client && npm install",
-    "server": "nodemon node ./server/server.js",
-    "client": "cd client && npm start",
-    "start": "node ./server/server.js",
-    "dev": "concurrently --kill-others-on-fail  \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "setup": "npm install",
+    "dev": "nodemon node ./server/server.js",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Jacob Indalo Inggidou",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
